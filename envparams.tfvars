@@ -1,0 +1,4 @@
+region = "SWITCH_REGION" #MODIFY OM CREATION
+ak = "SWITCH_AK" #MODIFY OM CREATION
+sk = "SWITCH_SK" #MODIFY OM CREATION
+environment = "production"
