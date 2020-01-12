@@ -1,11 +1,6 @@
-from time import strftime, sleep
 import boto3
-import wget
 from python_terraform import *
 import argparse
-import datetime
-import sys
-import time
 from botocore.exceptions import ParamValidationError, ClientError
 
 
