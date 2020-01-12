@@ -119,10 +119,14 @@ def main():
     try:
         tf = Terraform(
             working_dir='./')
+
         tf.init()
         tf.apply(var_file='envparams.tfvars', skip_plan=True, no_color=IsFlagged, refresh=True,
                  capture_output=False)
 
+        # tf.destroy(var_file='envparams.tfvars',
+        #        # skip_plan=True, no_color=IsFlagged, refresh=True,
+        #        capture_output=False, input=False)
 
     except Exception as err:
         print(err)
